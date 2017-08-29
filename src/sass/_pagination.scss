@@ -1,0 +1,40 @@
+.dashboard {
+    &-pagination {
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+
+        >ul {
+            display: inline-block;
+            background: #fff;
+            height: 66px;
+            list-style: none;
+            box-shadow: 0 1px 0 0 rgba(218, 218, 226, 0.75);
+            border-radius: 4px;
+            padding: 0 20px;
+
+            >li {
+                display: inline-block;
+                height: 66px;
+                line-height: 66px;
+                color: #94a0a8;
+                margin: 0 10px;
+                cursor: pointer;
+
+                &.prev-page {
+                    padding-right: 30px;
+                    border-right: 1px solid #dce0e4;
+                }
+
+                &.next-page {
+                    padding-left: 30px;
+                    border-left: 1px solid #dce0e4;
+                }
+
+                &.current-page, &:hover {
+                    color: #3d3d3d;
+                }
+            }
+        }
+    }
+}
